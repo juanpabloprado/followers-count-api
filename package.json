@@ -2,7 +2,8 @@
   "name": "followers-count-api",
   "version": "0.0.0",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "debug": "DEBUG=followers-count-api:* nodemon --debug ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -11,6 +12,7 @@
     "express": "~4.13.1",
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
+    "node-fetch": "^1.3.3",
     "serve-favicon": "~2.3.0"
   },
   "main": "app.js",
